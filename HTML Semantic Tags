@@ -1,10 +1,10 @@
 <html>
 <head>
 	
-	<!HTMLSemanticTags>
+	<!-- meta tags and title -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Page Title</title>
+	<title>HTML Semantic Tags</title>
 
 	<!-- external and internal CSS -->
 	<link rel="stylesheet" href="styles.css" media="all">
@@ -20,8 +20,11 @@
 
 </head>
 <body>
+	<h1>
+		"HTML semantic tags test 1"
+	</h1>
 
-	</!HTMLSemanticTags>
+	<!-- HTML elements here -->
 
 </body>
 </html>
