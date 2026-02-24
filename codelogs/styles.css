@@ -1,0 +1,31 @@
+/*bullshit idfk thingy*/
+
+main {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 0.75rem;
+    font-style: italic;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+}
+
+p.callout {
+    font-size: 2rem;
+    line-height: auto;
+    font-style: italic;
+}
+
+#row p {
+    margin-left: calc (100% * 1 / 6)
+}
