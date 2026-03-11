@@ -1,0 +1,156 @@
+body {
+    font-family: Arial;
+    margin: 0px;
+    background-color: #f3f3f3;
+    color: black;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+.badge {
+    border: 1px solid white;
+    display: inline-block;
+    padding: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+.intro {
+    color: rgb(210, 210, 210);
+    width: 80%;
+}
+
+main {
+    padding: 15px;
+}
+
+.photo {
+    margin-bottom: 20px;
+}
+
+.photo img {
+    width: 100%;
+    max-width: 1000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.times {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.box {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.box h3 {
+    margin: 0px;
+    font-size: 20px;
+}
+
+.box p {
+    margin-top: 5px;
+    color: gray;
+}
+
+.ingredients {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.instructions {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.ingredients h2 {
+    margin-top: 0px;
+}
+
+.instructions h2 {
+    margin-top: 0px;
+}
+
+.ingredients h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.ingredients ul {
+    padding-left: 20px;
+}
+
+.ingredients li {
+    margin-bottom: 7px;
+}
+
+.instructions ol {
+    padding-left: 25px;
+}
+
+.instructions li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+}
+
+@media (min-width: 800px) {
+    main {
+        max-width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .times {
+        display: flex;
+        gap: 15px;
+    }
+
+    .box {
+        flex: 1;
+    }
+
+    .ingredients {
+        width: 54%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .instructions {
+        width: 40%;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 20px;
+    }
+}
