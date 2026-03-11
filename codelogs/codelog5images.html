@@ -1,0 +1,116 @@
+<h1>Images</h1>
+
+<p>
+Images are used in websites to add visual information and improve the design of a page.
+In web development, images can be displayed using HTML or CSS depending on the purpose
+of the image.
+</p>
+
+<h2>Using the img tag vs background-image</h2>
+
+<p>
+The HTML <code>&lt;img&gt;</code> tag places an image directly into the page as content.
+This means it behaves like other elements in the layout and can include alt text
+for accessibility.
+</p>
+
+<pre>
+&lt;img src="cake.jpg" alt="Bavarian cream sponge cake"&gt;
+</pre>
+
+<p>
+Using <code>background-image</code> in CSS is different because the image becomes part
+of the styling of an element instead of being actual page content.
+</p>
+
+<pre>
+.box {
+  background-image: url("cake.jpg");
+}
+</pre>
+
+<p>
+The main difference is that the <code>img</code> tag is used when the image is meaningful
+content on the page, while background images are usually decorative. Another difference
+is layout: an <code>img</code> element affects the page structure, while a background
+image stays inside the element it is applied to.
+</p>
+
+
+<h2>Other CSS Properties for Background Images</h2>
+
+<p>
+Besides <code>background-image</code>, other CSS properties control how background
+images appear.
+</p>
+
+<p>
+<b>background-size</b> controls how large the image appears inside the element.
+</p>
+
+<pre>
+background-size: cover;
+</pre>
+
+<p>
+<b>background-repeat</b> controls whether the image repeats across the background.
+</p>
+
+<pre>
+background-repeat: no-repeat;
+</pre>
+
+<p>
+<b>background-position</b> controls where the image is placed inside the element.
+</p>
+
+<pre>
+background-position: center;
+</pre>
+
+
+<h2>Dimensions vs Resolution</h2>
+
+<p>
+Dimensions describe the width and height of a bitmap image in pixels, while
+resolution describes how much visual detail is contained within those dimensions.
+</p>
+
+
+<h2>Image File Formats</h2>
+
+<p><b>GIF</b> supports animation but has limited colors, so it works best for simple graphics or short animations.</p>
+
+<p><b>PNG</b> keeps high image quality and supports transparency, which makes it good for logos and graphics.</p>
+
+<p><b>JPG/JPEG</b> is commonly used for photographs because it compresses images well and keeps file sizes smaller.</p>
+
+<p><b>WebP</b> is a newer format that can keep good image quality while making file sizes smaller, which is useful for websites.</p>
+
+<p><b>SVG</b> is different because it is a vector format, meaning it can scale to any size without losing quality. It is often used for icons and logos.</p>
+
+<p>
+These formats are similar because they all store image data, but they differ in compression,
+transparency support, and whether they are bitmap or vector images. Because of this,
+some formats are better for certain uses. For example, JPG works well for photos,
+PNG works well for graphics with transparency, GIF is used for simple animations,
+WebP is efficient for web performance, and SVG is ideal for scalable graphics.
+</p>
+
+
+<h2>Examples</h2>
+
+<p>Example of an HTML image:</p>
+
+<pre>
+&lt;img src="image.jpg" alt="example image"&gt;
+</pre>
+
+<p>Example of a CSS background image:</p>
+
+<pre>
+.box {
+  background-image: url("image.jpg");
+  background-size: cover;
+}
+</pre>
