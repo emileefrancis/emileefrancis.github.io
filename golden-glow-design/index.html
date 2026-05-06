@@ -1,108 +1,112 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fashion Creator UX Guide</title>
+    <title>Golden Glow | Home</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header>
-        <div class="topbar">
-            <h1 class="site-title">Fashion Creator UX Guide</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="fashion-ux.html">Fashion UX</a></li>
-                    <li><a href="strategy.html">UX Strategy</a></li>
-                    <li><a href="scope.html">UX Scope</a></li>
-                    <li><a href="planning.html">Planning Tips</a></li>
-                    <li><a href="examples.html">Examples</a></li>
-                    <li><a href="branding.html">Branding</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header">
+        <div class="nav-wrap">
+            <a class="logo" href="index.html">Golden Glow</a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="beauty.html">Beauty</a></li>
+                <li><a href="fashion.html">Fashion</a></li>
+                <li><a href="self-care.html">Self-Care</a></li>
+                <li><a href="guides.html">Guides</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
         </div>
     </header>
 
     <section class="hero">
-        <div class="hero-box">
-            <h2>Learn how UX works in fashion websites</h2>
-            <p>This site is a beginner-friendly guide for people interested in fashion, branding, and web design. It
-                explains how user experience shapes online fashion spaces and why good planning matters before a site is
-                ever built.</p>
-            <p>The goal is to connect fashion and UX in a way that feels clear, visual, and useful for future creators.
-            </p>
-            <a class="button" href="fashion-ux.html">Start Exploring</a>
+        <div class="hero-content">
+            <p class="eyebrow">Beauty ~ Fashion ~ Self-Care</p>
+            <h1>Golden Glow</h1>
+            <p class="tagline">A soft glow-up guide for everyday confidence.</p>
+            <div class="button-row">
+                <a class="button" href="guides.html">Start Your Glow Guide</a>
+                <a class="button secondary" href="about.html">About the Project</a>
+            </div>
         </div>
-        <div class="hero-image">Placeholder image / fashion homepage mockup</div>
     </section>
 
-    <main>
-        <section>
-            <div class="grid three">
-                <article class="card">
-                    <h3>What is Fashion UX?</h3>
-                    <p>Learn how usability, trust, and visual clarity affect fashion websites and online shopping
-                        experiences.</p>
-                    <a href="fashion-ux.html">Read more</a>
-                </article>
-                <article class="card">
-                    <h3>UX Strategy</h3>
-                    <p>See how audience needs, goals, and planning decisions shape a site before design starts.</p>
-                    <a href="strategy.html">Read more</a>
-                </article>
-                <article class="card">
-                    <h3>UX Scope</h3>
-                    <p>Understand which pages, features, and content a fashion site should include to feel complete and
-                        useful.</p>
-                    <a href="scope.html">Read more</a>
-                </article>
+    <main id="main">
+
+        <section class="section split reveal">
+            <div>
+                <h2>Glow up, but make it feel like you.</h2>
+                <p>
+                    Golden Glow is a lifestyle website for college-aged women who want beauty, fashion,
+                    and self-care inspiration without feeling like they have to become a completely
+                    different person. The goal is warm, confident, realistic, and a little dreamy.
+                </p>
+                <p>
+                    Think golden hour skin, easy outfits, soft routines, and small habits that make
+                    daily life feel more intentional.
+                </p>
+            </div>
+
+            <div class="card">
+                <blockquote class="quote">
+                    "Naturally pretty, warm yellow energy, and a little cool boho."
+                </blockquote>
             </div>
         </section>
 
-        <section class="two-col">
-            <div class="content-box">
-                <h2>Why this site exists</h2>
-                <p>Fashion websites are not just supposed to look pretty. They also need to help people browse,
-                    understand products, and move through the site without frustration. This resource breaks those ideas
-                    down in a simple way.</p>
+        <section class="section reveal">
+            <div class="section-intro">
+                <h2>Explore the site</h2>
+                <p>Each page focuses on a different part of the Golden Glow lifestyle.</p>
             </div>
-            <div class="content-box">
-                <h2>Who it is for</h2>
-                <p>This site is made for young creatives, especially college-aged users, who care about fashion, digital
-                    design, and branding. It is meant for beginners who want practical examples and not a bunch of
-                    complicated jargon.</p>
+
+            <div class="grid three">
+                <a class="card link-card feature-card" style="--feature-bg:#c98f46;" href="beauty.html">
+                    <h3>Beauty</h3>
+                    <p>Skincare, makeup, and simple glow-up routines.</p>
+                </a>
+
+                <a class="card link-card feature-card" style="--feature-bg:#9e6f42;" href="fashion.html">
+                    <h3>Fashion</h3>
+                    <p>Soft outfits, capsule pieces, and warm styling ideas.</p>
+                </a>
+
+                <a class="card link-card feature-card" style="--feature-bg:#b77b57;" href="self-care.html">
+                    <h3>Self-Care</h3>
+                    <p>Daily rituals, reset routines, and gentle motivation.</p>
+                </a>
             </div>
         </section>
 
-        <section>
-            <div class="grid three">
-                <article class="card">
-                    <h3>Planning Tips</h3>
-                    <p>Ideas for organizing pages, labels, and layout before you start coding.</p>
-                    <a href="planning.html">View page</a>
-                </article>
-                <article class="card">
-                    <h3>Examples</h3>
-                    <p>Explore what works well in fashion UX and what design choices can create confusion.</p>
-                    <a href="examples.html">View page</a>
-                </article>
-                <article class="card">
-                    <h3>Branding</h3>
-                    <p>Look at how color, type, and images shape both usability and visual identity.</p>
-                    <a href="branding.html">View page</a>
-                </article>
-            </div>
+        <section class="section callout reveal">
+            <h2>Who this is for</h2>
+            <p>
+                This site is designed for someone who is busy, creative, and trying to feel more put together
+                without making beauty or wellness feel like a full-time job.
+            </p>
+            <ul class="pill-list">
+                <li>College lifestyle</li>
+                <li>Beginner friendly</li>
+                <li>Budget aware</li>
+                <li>Warm and relaxed</li>
+                <li>Soft confidence</li>
+            </ul>
         </section>
+
     </main>
 
-    <footer>
-        <p>Fashion Creator UX Guide | Student project website</p>
+    <footer class="site-footer">
+        <p>Golden Glow - a beauty, fashion, and self-care guide for soft, intentional confidence.</p>
+        <p><a href="index.html">Back home</a></p>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 
 </html>
