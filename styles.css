@@ -1,0 +1,214 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: #f8f2e9;
+  color: #2b2118;
+  line-height: 1.6;
+}
+
+/* Header and navigation */
+
+.hero {
+  min-height: 80vh;
+  padding: 1.5rem;
+  background:
+    linear-gradient(rgba(43, 33, 24, 0.65), rgba(43, 33, 24, 0.75)),
+    url("images/moon-bay.jpg");
+  background-color: #4a3829;
+  background-size: cover;
+  background-position: center;
+  color: #fff8ed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.nav a {
+  color: #fff8ed;
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 999px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.nav a:hover {
+  background-color: rgba(255, 248, 237, 0.18);
+  transform: translateY(-2px);
+}
+
+.hero-content {
+  max-width: 760px;
+  margin: 5rem auto;
+  text-align: center;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  font-size: 0.85rem;
+  color: #f2c879;
+}
+
+h1 {
+  font-size: clamp(3rem, 8vw, 6rem);
+  line-height: 1;
+  margin: 1rem 0;
+}
+
+.tagline {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+/* Main layout */
+
+main {
+  width: min(1100px, 92%);
+  margin: -3rem auto 3rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.card {
+  background: #fffaf2;
+  border: 1px solid #ead9c1;
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 16px 40px rgba(43, 33, 24, 0.12);
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  color: #4a2f1d;
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+  color: #7a4a2a;
+}
+
+/* Links and lists */
+
+.link-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.link-list a,
+.text-link {
+  display: block;
+  color: #4a2f1d;
+  background: #f3e2c8;
+  text-decoration: none;
+  padding: 0.9rem 1rem;
+  border-radius: 14px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.link-list a:hover,
+.text-link:hover {
+  background-color: #e4c38f;
+  transform: translateX(6px);
+}
+
+.button {
+  display: inline-block;
+  background: #f2c879;
+  color: #2b2118;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.9rem 1.3rem;
+  border-radius: 999px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.button:hover {
+  background: #ffd98c;
+  transform: translateY(-3px);
+}
+
+.secondary {
+  align-self: center;
+}
+
+/* Major project section */
+
+.major-card {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #2b2118;
+  color: #fff8ed;
+}
+
+/* Simple animation */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Desktop layout */
+
+@media (min-width: 750px) {
+  .nav {
+    justify-content: flex-end;
+  }
+
+  .hero-content {
+    text-align: left;
+    margin-left: 3rem;
+  }
+
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .intro,
+  .major-card {
+    grid-column: span 2;
+  }
+
+  .link-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .major-card {
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+  }
+}
