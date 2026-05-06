@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golden Glow | Aesthetic Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="logo" href="index.html">Golden Glow</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="beauty.html">Beauty</a></li>
+      <li><a href="fashion.html">Fashion</a></li>
+      <li><a href="self-care.html">Self-Care</a></li>
+      <li><a href="guides.html">Guides</a></li>
+      <li><a href="quiz.html" class="active">Quiz</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+</header>
+
+  <section class="hero small-hero">
+    <div class="hero-content">
+      <p class="eyebrow">Interactive Guide</p>
+      <h1>What Aesthetic Are You?</h1>
+      <p class="tagline">Find your Golden Glow style personality.</p>
+      <div class="button-row">
+        <a class="button" href="#quiz">Take the Quiz</a>
+        <a class="button secondary" href="guides.html">View Guides</a>
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+    <section class="section reveal" id="quiz">
+      <div class="section-intro">
+        <h2>Pick what feels most like you</h2>
+        <p>
+          This quiz matches you with a Golden Glow aesthetic based on your beauty, fashion,
+          and self-care preferences. There are no wrong answers — just different kinds of glow.
+        </p>
+      </div>
+
+      <form class="quiz-form card" id="aestheticQuiz">
+        <fieldset class="quiz-question">
+          <legend>1. Your ideal outfit feels...</legend>
+          <label><input type="radio" name="q1" value="boho" required> Flowy, earthy, and relaxed</label>
+          <label><input type="radio" name="q1" value="clean"> Simple, polished, and effortless</label>
+          <label><input type="radio" name="q1" value="cozy"> Comfortable, layered, and soft</label>
+          <label><input type="radio" name="q1" value="vintage"> Romantic, unique, and a little nostalgic</label>
+        </fieldset>
+
+        <fieldset class="quiz-question">
+          <legend>2. Choose a color palette.</legend>
+          <label><input type="radio" name="q2" value="boho" required> Olive, rust, cream, and warm brown</label>
+          <label><input type="radio" name="q2" value="clean"> White, beige, soft gold, and black</label>
+          <label><input type="radio" name="q2" value="cozy"> Honey, cocoa, blush, and oatmeal</label>
+          <label><input type="radio" name="q2" value="vintage"> Butter yellow, dusty rose, denim, and cherry</label>
+        </fieldset>
+
+        <fieldset class="quiz-question">
+          <legend>3. Your go-to beauty look is...</legend>
+          <label><input type="radio" name="q3" value="boho" required> Bronzy skin, messy waves, and glossy lips</label>
+          <label><input type="radio" name="q3" value="clean"> Slick hair, skin tint, and clear gloss</label>
+          <label><input type="radio" name="q3" value="cozy"> Rosy cheeks, brown mascara, and lip balm</label>
+          <label><input type="radio" name="q3" value="vintage"> Winged liner, blush, and a soft statement lip</label>
+        </fieldset>
+
+        <fieldset class="quiz-question">
+          <legend>4. Pick a perfect self-care night.</legend>
+          <label><input type="radio" name="q4" value="boho" required> Journaling, incense, music, and a long shower</label>
+          <label><input type="radio" name="q4" value="clean"> Resetting your space and doing a simple skincare routine</label>
+          <label><input type="radio" name="q4" value="cozy"> Tea, blankets, comfort TV, and stretching</label>
+          <label><input type="radio" name="q4" value="vintage"> Lighting a candle, reading, and making a playlist</label>
+        </fieldset>
+
+        <fieldset class="quiz-question">
+          <legend>5. Choose an accessory.</legend>
+          <label><input type="radio" name="q5" value="boho" required> Stacked rings</label>
+          <label><input type="radio" name="q5" value="clean"> Gold hoops</label>
+          <label><input type="radio" name="q5" value="cozy"> A claw clip</label>
+          <label><input type="radio" name="q5" value="vintage"> A silk scarf</label>
+        </fieldset>
+
+        <button class="button quiz-button" type="submit">Reveal My Aesthetic</button>
+      </form>
+
+      <div class="quiz-result card" id="quizResult" aria-live="polite">
+        <p class="eyebrow">Your Result</p>
+        <h2 id="resultTitle">Take the quiz to reveal your aesthetic.</h2>
+        <p id="resultDescription">
+          Your result will show up here with styling ideas, beauty notes, and a mini mood board.
+        </p>
+        <ul class="pill-list" id="resultTags"></ul>
+        <button class="button secondary" id="retakeQuiz" type="button">Retake Quiz</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Golden Glow ~ a beauty, fashion, and self-care guide for soft, intentional confidence.</p>
+    <p><a href="index.html">Back home</a></p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
