@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("https://images.unsplash.com/photo-1496747611176-843222e1e57c");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: black;
+}
+
+.step {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.intro {
+  text-align: center;
+}
+
+.intro h1 {
+  font-size: 55px;
+}
+
+.text-box {
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+}
+
+.text-box h2 {
+  margin-top: 0;
+}
+
+.ending {
+  background-color: rgba(255, 255, 255, 0.25);
+}
